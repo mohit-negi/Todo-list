@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import React ,{Component} from "react";
+import ToDoInput from './components/ToDoInput/ToDoInput';
+import ToDoDisplay from "./components/ToDoDisplay/ToDoDisplay";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//importing bootstrap distribution 
+import "bootstrap/dist/css/bootstrap.min.css";
+//importing uuid to generate unique ids for todo items
+import uuid from "uuid";
+export default class App extends Component
+{
+  render()
+  {
+    return(
+      <section>
+        <ToDoInput />
+        <ToDoDisplay />
+      </section>
+    )
+  }
 }
-
-export default App;
