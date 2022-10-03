@@ -1,4 +1,3 @@
-import './App.css';
 import React ,{Component} from "react";
 import ToDoInput from './components/ToDoInput/ToDoInput';
 import ToDoDisplay from "./components/ToDoDisplay/ToDoDisplay";
